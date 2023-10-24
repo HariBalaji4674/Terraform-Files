@@ -13,3 +13,12 @@ variable "instance_names"{
         "dispatch"
     ]
 }
+variable "zone_id"{
+    type = string
+    default = "Z0036310835V46R363UD"
+}
+variable "domain"{
+    type = string
+    default = "haridevopspractice.online"
+
+}
