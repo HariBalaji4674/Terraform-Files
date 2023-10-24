@@ -22,3 +22,14 @@
 #Functions
    The Terraform language does not support user-defined functions, and so only the functions built in to the language are available for use. 
    Functions are the expressions where it can be called when it is required
+
+#Locals:
+    Locals is also a type of variables where it contains both Functions and Expressions used
+
+    Named values which can be assigned and used in code
+    it mainly servers the purpose of removing duplication within the terraform code 
+    
+    When you use locals it removes the duplication within the terraform code and hence it improves the readability of the code
+
+#Data-Sources:
+    Querying the resources data dynamically from the source
