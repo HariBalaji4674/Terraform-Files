@@ -13,3 +13,9 @@
     Terraform = true
     Component = MongoDB
     Project = Roboshop
+#Loops: 
+    Count/Count-Index: Can only be used in module,resource,data blocks not used in outputs,variables,anyother tf files
+    Count : 
+    Count-index
+    For-Each
+    
