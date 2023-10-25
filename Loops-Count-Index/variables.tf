@@ -10,7 +10,7 @@ variable "instance_names"{
         "mysql",
         "shipping",
         "payment",
-        "dispatch"
+        "user"
     ]
 }
 variable "zone_id"{

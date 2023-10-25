@@ -33,3 +33,5 @@
 
 #Data-Sources:
     Querying the resources data dynamically from the source
+
+    Already Available resources are used to create new resource
