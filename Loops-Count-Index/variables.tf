@@ -20,5 +20,4 @@ variable "zone_id"{
 variable "domain"{
     type = string
     default = "haridevopspractice.online"
-
 }

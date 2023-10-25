@@ -35,3 +35,18 @@
     Querying the resources data dynamically from the source
 
     Already Available resources are used to create new resource
+
+# For-Each Block
+    It will create keyword called each then it will iterate through the each.key and each.value
+#Dynamic Block:
+    It will be used to Create the Particular configurations inside the resource block which are repetative 
+    Keyword Used: Dynamic Block
+               dynamic "setting" {
+                    for_each  = var.ingressrules
+                    content {
+                        description = setting.value.description
+                    }
+                }
+
+# State Files and Remote State Files:
+    
