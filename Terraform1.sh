@@ -49,4 +49,5 @@
                 }
 
 # State Files and Remote State Files:
-    
+    Session -25 See Video and Abhishek Video Also YouTube
+    S3 Bucket and DynamoDB Table.
