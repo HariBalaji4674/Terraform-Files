@@ -31,8 +31,6 @@ Infrastructure as a code --> IaaC
     }
     what-resource --> You need to get
 
-
-
 # Topics discussed:
     Maps in Variables
     Loops: Count and Count index
@@ -51,7 +49,7 @@ Infrastructure as a code --> IaaC
 #Loops: 
     Count/Count-Index: Can only be used in module,resource,data blocks not used in outputs,variables,anyother tf files
     Count : 
-    "Count-index:"
+    Count-index:
     For-Each:
 
 #Functions
@@ -90,9 +88,8 @@ Infrastructure as a code --> IaaC
 # tfvars:
     tfvars will be replace the default variable values and metion tf-var variables
     it will be useful when we are developing multi environment 
-    for different environments we need to give different s3 bucket and differnt varriable names
-    different Dynamodb Table
-    ** If we do not mentin differnet backent for differnet envirnments terraform will always replace the values **
+    for different environments we need to give different s3 bucket and differnt variable names different Dynamodb Table
+    ** If we do not mention different backend for differnet environments terraform will always replace the values **
 # Commands :
     terraform grep --help
     terraform plan | grep
@@ -107,3 +104,18 @@ Infrastructure as a code --> IaaC
 #Modules In terraform : Dont Repeat Yourself 
      create one module code to create instances 
      when ever we need to create instances just call the module using module "ec2-create" {source = "path of the module" }
+
+
+# Cidr Range:
+
+Private IP Ranges:
+Private IP ranges are specific blocks of IP addresses reserved for use within private networks and should not be routable on the public internet.
+
+10.0.0.0 to 10.255.255.255 (10.0.0.0/8)
+172.16.0.0 to 172.31.255.255 (172.16.0.0/12)
+192.168.0.0 to 192.168.255.255 (192.168.0.0/16)
+IP Address = Network + Host
+
+VPC :
+
+
