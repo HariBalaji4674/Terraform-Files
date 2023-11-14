@@ -101,7 +101,7 @@ Infrastructure as a code --> IaaC
 
 # How to Maintain the different environments in different repositories
 
-#Modules In terraform : Dont Repeat Yourself 
+# Modules In terraform : Dont Repeat Yourself 
      create one module code to create instances 
      when ever we need to create instances just call the module using module "ec2-create" {source = "path of the module" }
 
@@ -117,5 +117,14 @@ Private IP ranges are specific blocks of IP addresses reserved for use within pr
 IP Address = Network + Host
 
 VPC :
+
+NAT Gateway:
+Elastic IP Address:
+
+What is Parameters Store in Terraform?
+
+
+Monitoring The Applications:--> Promethus,Grafana,ELK
+
 
 

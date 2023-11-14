@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
         bucket = "hariroboshop"
-        key    = "AnyWhere"
+        key    = "NOWHERE"
         region = "us-east-1"
         dynamodb_table = "roboshoptable"
   }
