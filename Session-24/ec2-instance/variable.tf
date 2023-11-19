@@ -3,7 +3,7 @@ variable "ami_id" {
 }
 variable "tags" {
     default = {
-        Name = "First_Instnace"
+        Name = "First_Instance"
         Project = "Roboshop"
         Environment = "DEV"
     }
