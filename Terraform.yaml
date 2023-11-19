@@ -1,23 +1,31 @@
 # Session-24: About IaaC ,AWS CLI,IAM SetUP,ENV Setup Terraform
 
-Infrastructure as a Code:
--------------------------
-Infrastructure as a code --> IaaC
-
-1) What is Infrastructure?
-
-2) What is Inframanagement ?
-
-3) What is InfraStructure as a Code?
-
-4) What is Best IaaC Tool?
-
-5) What is Terraform?
-
+Infrastructure as a code --> IaaC:
+    Creating infra manually takes more time and more cost effective
+1) What is Infrastructure:
+    Creating the servers to deploy the services/applications manually or Automatically.
+2) What is Inframanagement :
+    Managing The infra and Creating the Services through manually or automation is called management
+3) What is InfraStructure as a Code:
+    Creating the Infrastructure using the code or scripting is called the IaaC
+4) What is Best IaaC Tool:
+    Terraform is the popular IaaC Tool.
+5) What is Terraform :
     Terraform is an infrastructure as code tool that lets you build, change, and version cloud and on-prem resources safely and efficiently.
-
-6) What are Advantages of using Terraform?
-7) Does Terraform Support Hybrid Cloud environments?
+6) What are Advantages of using Terraform:
+    1. Since Terraform is a code we will save that code as Version Control
+    2. Consistent Infrastructure --> For every environment the same set up will happen
+    3. Create Read Update Delete the Configuration
+    4. Inventory Management --> we can easily get the list of resources created.
+    5. Cost Optimization  --> When ever we need we can run and create the infra and if not required we can delete the infra
+    6. Dependency Management
+        we can automatically create each service dynamically
+    7. Terraform Modules --> ReUse the code
+        Where we can build the resouces based on modules
+    8. Terraform is declarative 
+        Simple, Easily Handled, 
+7) Does Terraform Support Hybrid Cloud environments :
+    Yes Terraform Supports Multicloud Support it will Support  
 8) HashiCorp Language Syntax
     Contains:
      Variables

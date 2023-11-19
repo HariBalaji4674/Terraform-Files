@@ -1,0 +1,63 @@
+Session:24: Infrastruture Discussion
+   0:00 : Recap
+   05:38 : Advantages of Terraform
+   20:22 : Terraform Environment Setup
+   29:40 : Command Line Interface
+   33:30 : IAM user Setup
+   38:54 : Hybrid IAAC
+   41:50 : Creation Of ec2
+   50:20 : Creation Of Resource
+   1:06:02 : doubts
+   1:16:02 : Variables
+   1:27:56 : Security Group
+   1:39:39 : doubts
+   1:46:43 : Ending
+
+
+
+
+Session : 28 :
+   Topics discussed:
+               CIDR
+               VPC
+               Subnets
+               Internet Gateway
+               Route tables
+               Security Groups
+               EC2 instance
+
+Assignments:
+Private vs Public subnet
+High Availability in AWS
+
+
+Session :31 : 
+    00:00  :: Security Group Module Development
+    19:00  :: Parameter Store
+
+Session : 32
+
+   00:00 :: ELK:Monitoring Basics : Prometheus
+
+Session : 33
+   00:00    :: ELK & LogsStash
+   01:00:00 :: VPC Peering Manual Configuration
+
+Session : 34 :: Related to Jenkins session : 44
+terraform:vpc advanced + CICD Devleopment 44
+   00:00 : VPC Connections
+   10:00 : VPC Peering Terraform
+   56:00 : VPN Setup With Terraform : EC2 Instance
+01:13:00 : MongoDB SetUp
+
+Session : 35 : Topics discussed:
+Launch template
+Auto scaling
+Target Group
+ALB
+Listeners
+Rules
+Security groups
+
+
+    
