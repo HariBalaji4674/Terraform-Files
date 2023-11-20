@@ -56,6 +56,13 @@ Additional Concepts:
     Terraform = true
     Component = MongoDB
     Project = Roboshop
+Outputs:   Output is the form or getting printed aws resources names or in the console
+syntax:
+    outputs "outputname"{
+        value = "aws.resourcename.id/name"
+    }
+Conditions:
+    expression ? "this will run if true" : "ths will run if false" 
 #Loops: 
     Count/Count-Index: Can only be used in module,resource,data blocks not used in outputs,variables,anyother tf files
     Count : 

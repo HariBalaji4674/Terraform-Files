@@ -17,5 +17,18 @@ variable "instance_type" {
 variable "sg_cidr" {
     type = list
     default = ["0.0.0.0/0"]
-  
+}
+variable "instance_names" {
+  type = list
+  default = ["mongodb",
+  "cart",
+  "catalogue",
+  "web",
+  "redis",
+  "rabbitmq",
+  "shipping",
+  "payment",
+  "mysql",
+  "user"
+  ]
 }
