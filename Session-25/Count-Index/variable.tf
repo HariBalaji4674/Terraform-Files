@@ -32,3 +32,9 @@ variable "instance_names" {
   "user"
   ]
 }
+variable "zone_id" {
+  default = "Z04508813AN6FY8NXYMG5"
+}
+variable "domain_name" {
+  default = "haridevopspractice.online"
+}
