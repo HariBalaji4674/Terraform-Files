@@ -47,6 +47,8 @@ Infrastructure as a code --> IaaC:
     Variables: Inputs & Outputs
     Locals
     Data sources
+Additional Concepts:
+    Map:
 #Tags:
     Key-Value Pairs: 
     Name = "Some-Name"
