@@ -144,4 +144,7 @@ What is Parameters Store in Terraform?
 Monitoring The Applications:--> Promethus,Grafana,ELK
 
 
+State and Remote State:
+    State is nothing but what resources it is created
+    
 
