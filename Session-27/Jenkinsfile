@@ -1,5 +1,8 @@
 pipeline {
     agent {node {label 'agent1' }}
+    options {
+        ansicolor('xterm')
+    }
     stages{
         stage('Init'){
             steps{
