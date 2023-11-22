@@ -168,3 +168,11 @@ Tf Vars:
     }
    To Over Ride the default values in terraform we use terraform.tfvars file 
 
+Multi Environment SetUp:
+
+1. Maintain diffrent repos 
+    code is different completely so that we dnt mess with dev and prod
+
+2. same code with different variables (tfvars,varaibles,terraform.tfvars) and config
+
+3. terraform workspaces 
