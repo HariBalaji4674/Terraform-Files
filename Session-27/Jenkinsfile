@@ -1,0 +1,33 @@
+pipeline {
+    agent {node {label 'agent1' }}
+    stages{
+        stage('Init'){
+            steps{
+                sh ''' 
+                cd /Modules/module-user/
+                terraform init '''
+            }
+
+        }
+        stage ('paln'){
+            steps {
+                sh '''
+                cd /Modules/module-user/
+                terraform plan'''
+            }
+        }
+        // stage ('apply'){
+        //     steps{
+        //         sh '''terraform apply -auto-approve'''
+        //     }
+        // }
+    }
+    post {
+        always {
+            echo "execute all the time this senstences"
+        }
+        failure {
+            echo "the execution got failed due to some issues"
+        }
+    }
+}
