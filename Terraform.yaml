@@ -148,3 +148,23 @@ State and Remote State:
     State is nothing but what resources it is created
     
 
+Tf Vars:
+    consistency accross multi environment Dev and Prod 
+    we use same code but different variables
+
+    variables mentions in variables.tf file are default values where we can over ride those values using variable.tfvars
+
+    In tfvars everything is key-value pair in tfvars
+
+    terraform plan -var-file=DEV/dev.tfvars 
+
+    if we keep the variables in terrafrom.tfvars file it will be automatically tiggered when we run the command terraform plan and apply 
+    
+    then we no need to pass anyvalue or commands like -var-file in teraform plan and apply
+
+    in variables if we want to just declare we use like below
+    variable "name"{
+        type = list/maps
+    }
+   To Over Ride the default values in terraform we use terraform.tfvars file 
+
