@@ -27,11 +27,11 @@ pipeline {
                 terraform plan'''
             }
         }
-        // stage ('apply'){
-        //     steps{
-        //         sh '''terraform apply -auto-approve'''
-        //     }
-        // }
+        stage('Approve') {
+            steps {
+                input "Please Approve the Request?"
+            }
+        }
     }
     post {
         always {
