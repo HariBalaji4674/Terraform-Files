@@ -122,32 +122,9 @@ Conditions:
      create one module code to create instances 
      when ever we need to create instances just call the module using module "ec2-create" {source = "path of the module" }
 
-
-# Cidr Range:
-
-Private IP Ranges:
-Private IP ranges are specific blocks of IP addresses reserved for use within private networks and should not be routable on the public internet.
-
-10.0.0.0 to 10.255.255.255 (10.0.0.0/8)
-172.16.0.0 to 172.31.255.255 (172.16.0.0/12)
-192.168.0.0 to 192.168.255.255 (192.168.0.0/16)
-IP Address = Network + Host
-
-VPC :
-
-NAT Gateway:
-Elastic IP Address:
-
-What is Parameters Store in Terraform?
-
-
-Monitoring The Applications:--> Promethus,Grafana,ELK
-
-
 State and Remote State:
     State is nothing but what resources it is created
     
-
 Tf Vars:
     consistency accross multi environment Dev and Prod 
     we use same code but different variables
@@ -181,3 +158,17 @@ Multi Environment SetUp:
     the power of terraform is lies in terraform modules
 Dont Repeat Yourself
 Create Code ,reuse it instead of writing same again and again
+
+# Number System :
+    decimal --> 0 - 9
+    binary --> 0,1
+    octal --> 0 - 8
+    hexadecimal --> 0 - 9 A - F
+
+# Binary System : 0,1 
+
+IP Address: 32 bits --> 2^32 == 4.3 billion
+IPv4 is Going to be Exhausted
+
+The communication between private ip address need to connect to the network is called NAT Gateway 
+
