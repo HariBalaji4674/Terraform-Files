@@ -176,3 +176,8 @@ Multi Environment SetUp:
 2. same code with different variables (tfvars,varaibles,terraform.tfvars) and config
 
 3. terraform workspaces 
+
+# Modules:
+    the power of terraform is lies in terraform modules
+Dont Repeat Yourself
+Create Code ,reuse it instead of writing same again and again
