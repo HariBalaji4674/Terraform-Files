@@ -16,7 +16,11 @@ pipeline {
         stage ('paln'){
             steps {
                 sh '''
-                cd /Modules/module-user/
+                cd Session-27
+                cd Modules
+                cd module-user
+                ls -ltr
+                pwd
                 terraform plan'''
             }
         }
