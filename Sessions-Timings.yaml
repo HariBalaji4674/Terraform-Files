@@ -51,6 +51,22 @@ Assignments:
 Private vs Public subnet
 High Availability in AWS
 
+Session 29 : VPC Module Development:
+   Total Development of module 
+
+Session 30:
+
+      00:00 : welcome and recap
+      02:45 : developing vpc and other modules
+      18:40 : internet gateway
+      26:36 : subnet creation
+      38:50 : route tables
+      42:00 : NAT gateway
+      01:01:02 : subnets association
+      01:03:20 : group database subnet
+      01:06:45 : vpc module into git
+      01:17:12 : opensource module
+      01:21:05 : doubts
 
 Session :31 : 
     00:00  :: Security Group Module Development

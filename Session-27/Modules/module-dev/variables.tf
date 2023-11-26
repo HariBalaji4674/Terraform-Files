@@ -10,3 +10,9 @@ variable "inst_name" {
     type  = string
     default = ""
 }
+variable "tags" {
+    # default = " "
+    default = {
+        Name = "Roboshop"
+    }
+}
