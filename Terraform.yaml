@@ -26,7 +26,7 @@ Infrastructure as a code --> IaaC:
         Simple, Easily Handled, 
 7) Does Terraform Support Hybrid Cloud environments :
     Yes Terraform Supports Multicloud Support it will Support  
-8) HashiCorp Language Syntax
+8) HashiCorp Language Syntax :
     Contains:
      Variables
      Data Types
@@ -38,6 +38,49 @@ Infrastructure as a code --> IaaC:
         arguments/options/parameters
     }
     what-resource --> You need to get
+ 
+ Types of Input Variables in Terraform:
+    list
+    set 
+    Map
+    Int
+    bool
+    tuple
+ How Many ways we can pass the input  variables:
+    through -var in CLI
+    Through File using tf vars -var-file/dev-tfvars
+    Through Environment Varibales TF_VAR_<VAR_NAME>
+    
+ Reference a Variable: var.<VAR_NAME>
+ Ignore the value : export TF_VAR_<VAR_NAME>=<VALUE>
+ 
+ variable "appi_id"{
+     type = string
+     default = "some_value"
+ }
+ 
+ variable "car_model"{
+         description = "Car Model Object"
+         type = object ({
+            model = string
+            color = string
+            year = number  
+ }
+ 
+ after defining the variables in variable file
+ var.variable_name we can use.
+ 
+ variable "memory" {
+        type  = string
+        default = "some_value"
+     }
+     
+ resource "aws_instance" {
+    name = "Instance Name"
+    memory = var.memory
+  }
+    
+ 
 
 # Topics discussed:
     Maps in Variables
@@ -108,6 +151,7 @@ Conditions:
     for different environments we need to give different s3 bucket and differnt variable names different Dynamodb Table
     ** If we do not mention different backend for differnet environments terraform will always replace the values **
 # Commands :
+
     terraform grep --help
     terraform plan | grep
     terraform init config

@@ -1,0 +1,60 @@
+What is Terraform Template:
+  A file where we can use to create a multiple resources using a file is called template
+extension: init.tpl or tftpl
+address: ${consule_address}
+placeholder: ${jsonencode}
+
+What is Terragrunt:
+  Terragrunt is a thin wrapper that provides extra tools for keeping your configurations DRY, working with multiple Terraform modules, and managing remote state.
+
+What is Validation Block:
+  Validation block is the code which make the users to provide values with certain constraints.
+  It forces users to enter the values which they have mentioned th condition
+Validation Block:
+  varaible "som_var"{
+    type = number
+    validation {
+      condition = var.som_var>1
+      error_message = "Mention Valid Number greater than 1 "
+    }
+  }
+Managing Multiple AWS Accoounts:
+  By giving the assume role ,role_arn
+
+Defining Multiple Regions:
+
+  providers "aws" {
+    region = "us-east-1"
+    alias = "east_region"
+  }
+  provider "aws" {
+    region = "us-west-1"
+    alias = "west_region"
+  }
+
+Assigining Multiple Regions:
+  data "aws_region" "west_region" {
+    provider = aws.west_region
+  }
+  data "aws_region" "east_region"{
+    provider = "east_region"
+  }
+
+Using Multiple Regions:
+  resource "aws_instance" "west_region_instance" {
+    provider = aws.west_region
+    instance_type = "t2.micro"
+  }
+
+user_data_replace_on_change = true
+
+resource "aws_instance" "example" {
+  ami  = ""
+  instance_type = " "
+  user_data = << -EOF
+    #!/bin/bash
+    echo "Hello World" > hello.txt
+    EOF
+}
+render a file from Module:
+script = templatesfile("${path.module}/user-data.sh", { ... })
