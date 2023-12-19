@@ -337,5 +337,48 @@ Types Of Provisioners:
 
 -----------------------------------------------------
 # Terraform WorkSpaces:
+
 What Is terraform Workspaces:
--
+- Modules and readme.md are created
+- Modules are re-usable & terraform.tfvars are used to provide variables
+Workspaces:
+- Maintain
+- Create statefiles per environment (dev,stage,pre-prod,prod,qa)
+
+Another way to Create Multiple environments is creating multiple backend configuration
+- S3 bucket and dynamodb table
+
+EKS-SetUp Steps Involved:
+- Create VPC
+- Create Extra-Subnet For Kubernetes
+- Create EC2 Instances
+- Create Security Group
+- Create IAM Roles
+- Create IAM Policies
+- Attach Policies
+- Create EKS Cluster
+- Create Node Group
+
+
+Manually Creating EKS Cluster:
+
+Configure Cluster:
+- Name
+- Version
+- Create Service IAM Role for Cluster
+
+Specifying Networking:
+- Create VPC
+- Create Subnets
+- Create Security Groups
+- Cluster End Point Access
+
+Configure Observability:
+- Metrics
+- Control Plane Logging
+
+Amazon EKS Add-ons:
+- CoreDNS
+- VPC CNI
+- Kube-proxy
+- Amazon EKS Pod Identity Agent
